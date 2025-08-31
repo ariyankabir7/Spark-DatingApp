@@ -5,10 +5,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.DialogFragment
+import com.ariyan.spark.R
 import com.ariyan.spark.databinding.DialogMatchBinding
 import com.ariyan.spark.model.User
 import com.bumptech.glide.Glide
-import com.ariyan.spark.R
 
 class MatchSuccessDialogFragment(
     private val currentUser: User,

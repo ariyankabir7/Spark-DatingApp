@@ -6,13 +6,13 @@ import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
+import com.ariyan.spark.R
+import com.ariyan.spark.databinding.FragmentBrowseBinding
+import com.ariyan.spark.utils.LoadingUtils
 import com.google.android.material.snackbar.Snackbar
 import com.yuyakaido.android.cardstackview.CardStackLayoutManager
 import com.yuyakaido.android.cardstackview.CardStackListener
 import com.yuyakaido.android.cardstackview.Direction
-import com.ariyan.spark.R
-import com.ariyan.spark.databinding.FragmentBrowseBinding
-import com.ariyan.spark.utils.LoadingUtils
 
 class BrowseFragment : Fragment(R.layout.fragment_browse) {
 

@@ -5,12 +5,12 @@ import android.view.View
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.firestore.ktx.firestore
-import com.google.firebase.ktx.Firebase
 import com.ariyan.spark.R
 import com.ariyan.spark.databinding.FragmentInterestsBinding
 import com.ariyan.spark.utils.LoadingUtils
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
 
 class InterestsFragment : Fragment(R.layout.fragment_interests) {
     private var _binding: FragmentInterestsBinding? = null

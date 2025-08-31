@@ -5,12 +5,12 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
 import com.ariyan.spark.R
 import com.ariyan.spark.databinding.ItemMatchBinding
 import com.ariyan.spark.model.MatchItem
 import com.ariyan.spark.model.User
 import com.ariyan.spark.utils.TimeUtils
+import com.bumptech.glide.Glide
 
 class MatchAdapter(
     private val onClick: (User) -> Unit

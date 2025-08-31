@@ -10,12 +10,12 @@ import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.fragment.app.viewModels
 import androidx.navigation.findNavController
-import com.bumptech.glide.Glide
 import com.ariyan.spark.R
 import com.ariyan.spark.databinding.FragmentProfileBinding
 import com.ariyan.spark.model.User
 import com.ariyan.spark.ui.BaseFragment
 import com.ariyan.spark.utils.LoadingUtils
+import com.bumptech.glide.Glide
 
 class ProfileFragment : BaseFragment() {
 

@@ -7,9 +7,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.google.android.material.snackbar.Snackbar
 import com.ariyan.spark.databinding.FragmentMatchBinding
 import com.ariyan.spark.ui.BaseFragment
+import com.google.android.material.snackbar.Snackbar
 
 class MatchFragment : BaseFragment() {
 

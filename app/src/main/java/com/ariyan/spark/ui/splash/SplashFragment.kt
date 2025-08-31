@@ -9,10 +9,10 @@ import androidx.fragment.app.viewModels
 import androidx.navigation.NavOptions
 import androidx.navigation.fragment.findNavController
 import com.ariyan.spark.R
+import com.ariyan.spark.utils.NavDestination
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
-import com.ariyan.spark.utils.NavDestination
 
 class SplashFragment : Fragment(R.layout.fragment_splash) {
     private val vm: SplashViewModel by viewModels()

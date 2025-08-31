@@ -4,9 +4,9 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.google.firebase.Timestamp
 import com.ariyan.spark.model.Message
 import com.ariyan.spark.repository.UserRepository
+import com.google.firebase.Timestamp
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 

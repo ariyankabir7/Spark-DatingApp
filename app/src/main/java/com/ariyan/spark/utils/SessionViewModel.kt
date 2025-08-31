@@ -3,8 +3,8 @@ package com.ariyan.spark.utils
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.google.firebase.auth.FirebaseAuth
 import com.ariyan.spark.repository.UserRepository
+import com.google.firebase.auth.FirebaseAuth
 import kotlinx.coroutines.launch
 
 class SessionViewModel : ViewModel() {

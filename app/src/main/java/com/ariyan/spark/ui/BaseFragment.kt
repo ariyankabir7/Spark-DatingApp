@@ -5,10 +5,10 @@ import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.findNavController
-import com.google.firebase.auth.FirebaseAuth
-import com.google.android.material.snackbar.Snackbar
 import com.ariyan.spark.R
 import com.ariyan.spark.utils.SessionViewModel
+import com.google.android.material.snackbar.Snackbar
+import com.google.firebase.auth.FirebaseAuth
 
 /**
  * A base fragment that all other fragments in the main part of the app should extend.

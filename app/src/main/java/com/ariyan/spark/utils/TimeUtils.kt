@@ -1,10 +1,8 @@
 package com.ariyan.spark.utils
 
-import android.text.format.DateUtils
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
-import java.util.concurrent.TimeUnit
 
 object TimeUtils {
 
