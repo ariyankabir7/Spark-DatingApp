@@ -7,7 +7,7 @@ Built with a **clean architecture** and the latest **Android development technol
 
 ## 📸 Screenshots   
 
-|      Splash     | Login / Sign Up | Browse Screen |    Match   | Match List |
+|      Splash     | Login  | Browse Screen |    Match   | Match List |
 |-----------------|---------------|------------|------------|------------|
 | ![Splash](https://github.com/user-attachments/assets/4620a86f-6385-405e-a091-85829c60dd8d) | ![Login](https://github.com/user-attachments/assets/6be1ddf1-4af0-45ed-af18-0dd3bfca8774) | ![Browse](https://github.com/user-attachments/assets/6144f712-22f3-4d54-b5fd-c5df2e0d0997) | ![Match](https://github.com/user-attachments/assets/ac9c8e7f-96ce-4550-b210-e69ce9b22efc) |![Match List](https://github.com/user-attachments/assets/dec8e202-39ea-4b4e-85f6-99b75f02cf58)
 
