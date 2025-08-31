@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Layout for a single interest chip in the RecyclerView.
+  Designed by a Modern UI Designer.
+-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/interest_item_chip"
+        style="@style/Widget.MaterialComponents.Chip.Filter"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_38sdp"
+        android:layout_marginBottom="@dimen/_6sdp"
+        android:layout_gravity="center"
+        android:checkable="true"
+        android:textAlignment="center"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:textColor="@color/chip_text_selector"
+        android:textSize="@dimen/_12ssp"
+        app:chipBackgroundColor="@color/chip_background_selector"
+        app:chipCornerRadius="@dimen/_8sdp"
+        app:chipStrokeColor="@color/primary"
+        app:chipStrokeWidth="1dp"
+        app:checkedIconVisible="false"
+        app:closeIconVisible="false"
+        tools:text="Photography" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <!-- Fill with your theme's primary color -->
+    <solid android:color="@color/primary" />
+
+    <!-- Optional subtle shadow/elevation mimic -->
+    <size
+        android:width="8dp"
+        android:height="8dp" />
+</shape>

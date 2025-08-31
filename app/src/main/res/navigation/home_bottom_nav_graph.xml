@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_bottom_nav_graph"
+    app:startDestination="@id/browseFragment">
+
+    <fragment
+        android:id="@+id/browseFragment"
+        android:name="com.ariyan.spark.ui.home.browse.BrowseFragment"
+        android:label="Browse" />
+
+    <fragment
+        android:id="@+id/matchFragment"
+        android:name="com.ariyan.spark.ui.home.match.MatchFragment"
+        android:label="Match">
+        <action
+            android:id="@+id/action_matchFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.ariyan.spark.ui.home.profile.ProfileFragment"
+        android:label="Profile" />
+
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.ariyan.spark.ui.home.chat.ChatFragment"
+        android:label="Chat">
+
+        <argument
+            android:name="otherUserId"
+            app:argType="string" />
+
+        <argument
+            android:name="otherUserName"
+            app:argType="string" />
+    </fragment>
+
+</navigation>

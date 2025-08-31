@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_24sdp"
+    android:background="@drawable/chat_input_background"
+    android:padding="@dimen/_24sdp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="It's a Match!"
+        android:textColor="@color/primary"
+        android:textSize="@dimen/_32ssp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivCurrentUser"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:padding="3dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toStartOf="@+id/ivMatchedUser"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+        app:strokeColor="@color/primary"
+        app:strokeWidth="3dp"
+        tools:src="@tools:sample/avatars" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivMatchedUser"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginStart="-30dp"
+        android:padding="3dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@id/ivCurrentUser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ivCurrentUser"
+        app:layout_constraintTop_toTopOf="@id/ivCurrentUser"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+        app:strokeColor="@color/primaryVariant"
+        app:strokeWidth="3dp"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:gravity="center"
+        android:textColor="@color/onSurface"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivCurrentUser"
+        tools:text="You and Jessica have liked each other." />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnStartChat"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_48sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:text="Start Chatting"
+        android:textAllCaps="false"
+        android:textColor="@color/onPrimary"
+        app:cornerRadius="@dimen/_24sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSubtitle" />
+
+    <TextView
+        android:id="@+id/btnKeepSwiping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="?attr/selectableItemBackground"
+        android:padding="@dimen/_8sdp"
+        android:text="Keep Swiping"
+        android:textColor="@color/onSurface"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnStartChat" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

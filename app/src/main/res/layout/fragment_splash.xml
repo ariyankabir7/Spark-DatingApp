@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Splash Screen Layout for a modern dating app.
+  Designed by a Modern UI Designer.
+  Date: August 30, 2025
+  Location: Kolkata, West Bengal, India
+  * Updated to use ssp for text and sdp for dimensions for better scalability.
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!--
+        TODO: Add your app's logo here.
+        A clean, vector graphic (SVG) is highly recommended for scalability and a sharp look.
+        A simple heart or a stylized flame icon would fit the theme.
+        -->
+        <ImageView
+            android:id="@+id/app_logo"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_marginBottom="@dimen/_46sdp"
+            android:contentDescription="@string/app_name"
+           android:src="@drawable/logo"
+            /> <!-- Placeholder drawable -->
+
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/app_name"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/_36ssp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/app_tagline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:text="Find your connection"
+            android:textColor="@color/onSurface"
+            android:textSize="@dimen/_10ssp" />
+    </LinearLayout>
+
+    <!--
+      This CardView acts as the primary call-to-action button.
+      Using a CardView gives it a modern, elevated look with soft shadows and rounded corners.
+      It's anchored to the bottom for easy thumb access on mobile devices.
+    -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/google_login_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/_32sdp"
+        android:visibility="gone"
+        android:layout_marginEnd="@dimen/_32sdp"
+        android:layout_marginBottom="@dimen/_64sdp"
+        app:cardBackgroundColor="@color/surface"
+        app:cardCornerRadius="@dimen/_28sdp"
+        app:cardElevation="@dimen/_4sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+            <!--
+            TODO: Add the official Google 'G' logo icon here.
+            Place a 24x24dp drawable of the Google icon.
+            -->
+            <ImageView
+                android:id="@+id/google_icon"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:contentDescription="google"
+                android:src="@drawable/ic_google"
+                /> <!-- Placeholder drawable -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_14sdp"
+                android:text="Login with Google"
+                android:textColor="@color/onSurface"
+                android:textSize="@dimen/_18ssp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+

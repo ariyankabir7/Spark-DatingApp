@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary">#FF3366</color>         <!-- coral/pink -->
+    <color name="primaryVariant">#E02A58</color>
+    <color name="secondary">#FFD6E6</color>
+    <color name="background">#FFF8FB</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="onPrimary">#FFFFFF</color>
+    <color name="onSurface">#222222</color>
+    <color name="error">#A10F03</color>
+
+</resources>

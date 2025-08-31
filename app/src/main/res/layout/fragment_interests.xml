@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Interests Selection Screen Layout.
+  Designed by a Modern UI Designer.
+  Date: August 30, 2025
+  Location: Kolkata, West Bengal, India
+  Features:
+  - Modern, clean UI for selecting interests.
+  - Uses a RecyclerView for a dynamic list of chips.
+  - Styled with Material Design components and consistent branding.
+  - Scalable dimensions using SDP and SSP.
+-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="@dimen/_24sdp"
+    tools:context=".InterestsFragment">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:text="What are you into?"
+        android:textColor="@color/primary"
+        android:textSize="@dimen/_32ssp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:text="Select your interests to get started."
+        android:textColor="@color/onSurface"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+    <!--
+      This RecyclerView will display the interest chips.
+      In your Fragment/Activity, use a FlexboxLayoutManager or a GridLayoutManager
+      to achieve a nice, wrapping grid of chips.
+      e.g., binding.rvInterests.layoutManager = FlexboxLayoutManager(context)
+    -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvInterests"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:layout_marginBottom="@dimen/_16sdp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSaveInterests"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintStart_toStartOf="parent"
+        app:spanCount="2"
+        app:layout_constraintTop_toBottomOf="@id/tvSubtitle"
+        tools:listitem="@layout/item_chip" /> <!-- TODO: Create item_interest_chip.xml -->
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSaveInterests"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_50sdp"
+        android:backgroundTint="@color/primary"
+        android:text="Save &amp; Continue"
+        android:textColor="@color/onPrimary"
+        android:textSize="@dimen/_16ssp"
+        app:cornerRadius="@dimen/_16sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

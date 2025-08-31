@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/browseFragment"
+        android:icon="@drawable/ic_browse"
+        android:title="Browse" />
+    <item
+        android:id="@+id/matchFragment"
+        android:icon="@drawable/ic_match"
+        android:title="Match" />
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/ic_person"
+        android:title="Profile" />
+</menu>

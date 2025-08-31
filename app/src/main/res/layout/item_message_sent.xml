@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="end"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_bubble_outgoing"
+        android:orientation="vertical"
+        android:gravity="end"
+        android:padding="@dimen/_6sdp">
+
+        <TextView
+            android:id="@+id/text_message_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="260dp"
+            android:text="Hi there!"
+            android:textSize="@dimen/_11ssp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/text_message_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="260dp"
+            android:textSize="@dimen/_6ssp"
+            android:textAlignment="textEnd"
+            android:text="02-01-2025"
+            android:textColor="@color/onSurface" />
+
+    </LinearLayout>
+</LinearLayout>
